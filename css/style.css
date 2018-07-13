@@ -1,0 +1,127 @@
+/* Global Styles */
+
+.banner {
+    display: flex;
+    height: 4rem;
+    justify-content: space-around;
+    background: rgba(10, 10, 10, 0.2);
+    color: white;
+}
+#flickr_logo {
+    padding-top: .8rem;
+    flex-grow: 0.5;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+#magnifiying {
+    padding-top: 1.5rem;
+}
+#login {
+    padding-top: 1.5rem;
+}
+#btn_banner {
+    display: inline-block;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    background: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+}
+body {
+    display: block;
+    margin: 0;
+    font-family: Proxima Nova, helvetica neue, helvetica, arial, sans-serif;
+}
+#inspiration {
+    background-image: url("../img/ales-krivec-20582-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    z-index: -10;
+}
+#inspiration-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+}
+#showcase_text {
+    text-align: center;
+    color: white;
+    padding-top: 10.5rem;
+    font-size: 1.5rem;
+    font-weight: 
+}
+#button10 {
+    margin-top: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+#dynamic_p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    padding-bottom: .1rem;
+    padding-top: 8.6rem;
+}
+li {
+    list-style: none;
+}
+.footer {
+    display: flex;
+    background: black;
+    color: gray;
+}
+hr {
+    width: 80vw;
+    border: .5px gray solid;
+}
+/* Media Queries */
+
+@media(max-width: 768px) {
+    #btn_banner {
+        display: none;
+    }
+
+    #showcase_text p {
+        display: none;
+    }
+    #login {
+        border: 2px solid white;
+        margin-top: 1rem;
+        margin-bottom: 0.7rem;
+        margin-left: 0.5rem;
+        margin-right: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    #flickr_logo {
+        padding-top: 1.3rem;
+        flex-grow: 0.5;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .footer {
+        width: 100vw;
+        height: 65vh;
+    }
+}
